@@ -1,5 +1,6 @@
 # PASO A PASO DE LA API
 es importante recordar que para ejecutar un proyecto Laravel se necesita tener un servidor web (como Apache) y un servidor de base de datos (como MySQL) activados y configurados adecuadamente.<br>
+También recordar que necesitamos tener instalado "<b>POSTMAN</b>" ya que lo utilizaremos como entorno de prueba para simular oel funcionamiento de la API correctamente.
 
 Por lo tanto, antes de realizar los pasos, asegúrate de que Apache y MySQL estén activados y en funcionamiento en tu máquina.
 <h1>PASOS DE LA INSTALACION Y FUNCIONAMIENTO:</h1><br>
