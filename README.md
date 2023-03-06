@@ -1,4 +1,7 @@
 # PASO A PASO DE LA API
+es importante recordar que para ejecutar un proyecto Laravel se necesita tener un servidor web (como Apache) y un servidor de base de datos (como MySQL) activados y configurados adecuadamente.<br>
+
+Por lo tanto, antes de realizar los pasos mencionados en el mensaje anterior, asegúrate de que Apache y MySQL estén activados y en funcionamiento en tu máquina.
 
 Clonar el repositorio:<br>
 <b>git clone https://github.com/IvanAlexisUrbina/ApiRest.git</b>
