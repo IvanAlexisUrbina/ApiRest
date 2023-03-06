@@ -18,8 +18,13 @@ POST http://127.0.0.1:8000/api/login
 Este endpoint recibe los valores con las credenciales del usuario y devuelve un token de acceso que debe ser incluido en los encabezados de las solicitudes que requieren autenticación. Si las credenciales son incorrectas, se devuelve un código de estado HTTP 401 (Unauthorized).
 
 Request:
+Abre la pestaña "Body" en POSTMAN y selecciona la opción "form-data".<br>
+A continuación, ingresa los valores correspondientes. <br>
+En este caso, los valores son tomados de la tabla de usuarios en la base de datos <b>apirest</b>.<br>
+Por ejemplo, para el campo "email", selecciona un correo electrónico de la tabla de usuarios y escríbelo en el campo "VALUE".<br>
+en el campo password añadimos "password" de nuevo ya que estos son datos quemados y esta condifurado para que acepte password.<br>
+y el ultimo dato dato escribimos un dispositivo de ejemplo.
 
-form-data
 <table>
   <tr>
     <th style="font-weight: bold;">KEY</th>
