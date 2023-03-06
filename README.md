@@ -114,6 +114,7 @@ Además, es necesario agregar los siguientes valores a los <b>headers</b> de la 
 <b>HEADERS:</b><br>
 <table>
   <tr>
+  
     <td><strong>Accept</strong></td>
     <td><strong>application/json</strong></td>
   </tr>
