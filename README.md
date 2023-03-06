@@ -15,7 +15,7 @@ Esta API es una herramienta útil para obtener datos de una base de datos SQL y 
 
 <h1>LOGIN (opcional)</h1>
 
-strong>Método: </strong>POST<br>
+<strong>Método: </strong>POST<br>
 <strong>Endpoint: </strong> http://127.0.0.1:8000/api/login
 
 
