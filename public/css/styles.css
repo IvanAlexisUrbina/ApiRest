@@ -1,0 +1,13 @@
+.container{
+    transition: transform 0.3s ease;
+    border-radius: 5px;
+    filter: brightness(0.8);
+}
+.container:hover{
+    transform: scale(1.1) translateZ(10px);
+    cursor: pointer;
+    filter: brightness(1.2);
+}
+.container:not(:hover){
+    filter: brightness(0.8);
+}
