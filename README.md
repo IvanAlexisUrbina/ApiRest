@@ -10,3 +10,40 @@ Para utilizar la API, simplemente debe enviarse una solicitud con el token gener
 En el archivo de documentación de la API, se puede encontrar una lista completa de los endpoints disponibles, junto con ejemplos de solicitud y respuesta. Así como también información sobre cómo iniciar sesión y cómo generar el token necesario para acceder a los recursos protegidos.
 
 Esta API es una herramienta útil para obtener datos de una base de datos SQL y mostrarlos en una aplicación web de manera segura y eficiente.
+
+<h1>LOGIN (opcional)</h1>
+
+POST /login
+ENDPOINT
+http://127.0.0.1:8000/api/login
+
+Este endpoint recibe los valores con las credenciales del usuario y devuelve un token de acceso que debe ser incluido en los encabezados de las solicitudes que requieren autenticación. Si las credenciales son incorrectas, se devuelve un código de estado HTTP 401 (Unauthorized).
+
+Request seria
+
+form-data
+<table>
+  <tr>
+    <th style="font-weight: bold;">KEY</th>
+    <th style="font-weight: bold;">VALUE</th>
+  </tr>
+  <tr>
+    <td>email</td>
+    <td>emory.cremin@example.com</td>
+  </tr>
+  <tr>
+    <td>password</td>
+    <td>password</td>
+  </tr>
+    <tr>
+    <td>device</td>
+    <td>iphone</td>
+  </tr>
+</table>
+
+
+Response
+{
+"token":"1|Hv8IcN5dSY6TMvb7Mhul1xJpJLPp76eCBEbI91Qd",
+"message":"Success"
+}
