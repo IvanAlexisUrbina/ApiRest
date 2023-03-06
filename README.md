@@ -15,7 +15,10 @@ Esta API es una herramienta útil para obtener datos de una base de datos SQL y 
 
 <h1>LOGIN (opcional)</h1>
 
-<b>POST</b> http://127.0.0.1:8000/api/login
+strong>Método: </strong>POST<br>
+<strong>Endpoint: </strong> http://127.0.0.1:8000/api/login
+
+
 
 Este endpoint recibe los valores con las credenciales del usuario y devuelve un token de acceso que debe ser incluido en los encabezados de las solicitudes que requieren autenticación. Si las credenciales son incorrectas, se devuelve un código de estado HTTP 401 (Unauthorized).
 
@@ -58,8 +61,7 @@ y el ultimo dato dato escribimos un dispositivo de ejemplo.
 }<br>
 <br>
 <h1>Obtener información de usuario</h1>
-<strong>Método: </strong>GET<br>
-<strong>Endpoint: </strong>http://127.0.0.1:8000/api/v1/posts/1</strong><br>
+
 Para obtener la información de un usuario en particular, debemos utilizar el método GET y especificar el id del usuario en el endpoint. Además, es importante incluir el token de autenticación en los <b>headers</b> de la solicitud de la siguiente manera:<br>
 
 <table>
@@ -81,3 +83,8 @@ Además, es necesario agregar los siguientes valores a los <b>headers</b> de la 
 Con estos valores en los headers, la API sabrá que la solicitud está hecha para obtener datos en formato JSON, lo que permitirá que la respuesta se ajuste a este formato.<br>
 y asi mandarnos un mensaje de satisfaccion de no esta autorizado.
 
+<strong>Método: </strong>GET<br>
+<strong>Endpoint V1 RECURSO: </strong>http://127.0.0.1:8000/api/v1/posts/1</strong><br>
+<strong>Endpoint V1 COLLECTION: </strong>http://127.0.0.1:8000/api/v1/posts</strong><br>
+<strong>Endpoint V2 RECURSO: </strong>http://127.0.0.1:8000/api/v2/posts/1</strong><br>
+<strong>Endpoint V2 COLLECTION: </strong>http://127.0.0.1:8000/api/v2/posts</strong><br>
