@@ -7,7 +7,9 @@ Además, se ha implementado una autenticación sencilla utilizando Laravel Sanct
 
 Para utilizar la API, simplemente debe enviarse una solicitud con el token generado por Laravel Sanctum. Para obtener la información deseada, se pueden enviar solicitudes a los diferentes endpoints que se han creado.<br>
 
-En el archivo de documentación de la API, se puede encontrar una lista completa de los endpoints disponibles, junto con ejemplos de solicitud y respuesta.<br> Así como también información sobre cómo iniciar sesión y cómo generar el token necesario para acceder a los recursos protegidos.<br>
+En este archivo de documentacion de la API, se puede encontrar una lista completa de los endpoints disponibles, <br>
+junto con ejemplos de solicitud y respuesta.<br> 
+Así como también información sobre cómo iniciar sesión y cómo generar el token necesario para acceder a los recursos protegidos.<br>
 
 Esta API es una herramienta útil para obtener datos de una base de datos SQL y mostrarlos en una aplicación web de manera segura y eficiente.<br>
 
@@ -21,9 +23,13 @@ Request:<br>
 Abre la pestaña "Body" en POSTMAN y selecciona la opción "form-data".<br>
 A continuación, ingresa los valores correspondientes. <br>
 En este caso, los valores son tomados de la tabla de usuarios en la base de datos <b>apirest</b>.<br>
-Por ejemplo, para el campo "email", selecciona un correo electrónico de la tabla de usuarios y escríbelo en el campo "VALUE".<br>
-en el campo password añadimos "password" de nuevo ya que estos son datos quemados y esta condifurado para que acepte password.<br>
+Por ejemplo, <br>
+para el campo "email", selecciona un correo electrónico de la tabla de <b>users</b> y escríbelo en el campo "VALUE".<br>
+en el campo password añadimos "password" de nuevo, ya que estos son datos quemados para que acepte password.<br>
 y el ultimo dato dato escribimos un dispositivo de ejemplo.
+
+<b>BODY:</b><br>
+*FORM DATA <br>
 
 <table>
   <tr>
@@ -45,11 +51,12 @@ y el ultimo dato dato escribimos un dispositivo de ejemplo.
 </table>
 
 
-Response:<br>
+<b>Response:</b><br>
 {<br>
 "token":"1|Hv8IcN5dSY6TMvb7Mhul1xJpJLPp76eCBEbI91Qd",<br>
 "message":"Success"<br>
 }<br>
+<br>
 <h1>Obtener información de usuario</h1>
 <strong>Método: </strong>GET<br>
 <strong>Endpoint: </strong>http://127.0.0.1:8000/api/v1/posts/1</strong><br>
