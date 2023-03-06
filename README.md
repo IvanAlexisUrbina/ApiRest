@@ -13,11 +13,11 @@ Esta API es una herramienta útil para obtener datos de una base de datos SQL y 
 
 <h1>LOGIN (opcional)</h1>
 
-POST http://127.0.0.1:8000/api/login
+<b>POST</b> http://127.0.0.1:8000/api/login
 
 Este endpoint recibe los valores con las credenciales del usuario y devuelve un token de acceso que debe ser incluido en los encabezados de las solicitudes que requieren autenticación. Si las credenciales son incorrectas, se devuelve un código de estado HTTP 401 (Unauthorized).
 
-Request:
+Request:<br>
 Abre la pestaña "Body" en POSTMAN y selecciona la opción "form-data".<br>
 A continuación, ingresa los valores correspondientes. <br>
 En este caso, los valores son tomados de la tabla de usuarios en la base de datos <b>apirest</b>.<br>
@@ -49,4 +49,18 @@ Response:<br>
 {<br>
 "token":"1|Hv8IcN5dSY6TMvb7Mhul1xJpJLPp76eCBEbI91Qd",<br>
 "message":"Success"<br>
-}
+}<br>
+<h1>Obtener información de usuario</h1>
+<strong>Método: </strong>GET<br>
+<strong>Endpoint: </strong>http://127.0.0.1:8000/api/v1/posts/1</strong><br>
+Para obtener la información de un usuario en particular, debemos utilizar el método GET y especificar el id del usuario en el endpoint. Además, es importante incluir el token de autenticación en los headers de la solicitud de la siguiente manera:
+
+<table>
+  <tr>
+    <td><strong>Authorization</strong></td>
+    <td><strong>Bearer [Token]</strong></td>
+  </tr>
+</table>
+Es necesario reemplazar [Token] con el token que se generó al momento de realizar el inicio de sesión del usuario correspondiente. Esto garantiza que sólo los usuarios autenticados puedan acceder a la información.
+
+
