@@ -21,6 +21,9 @@ Clonar el repositorio:<br>
 <b>Ejecutar los seeders para poblar la base de datos con datos de prueba:</b><br>
 -php artisan db:seed
 <br>
+Iniciar proyecto
+<br>
+php artisan serve
 <br>
 Con estos pasos, tendrás tu proyecto y base de datos configurados y listos para ser utilizados.
 
