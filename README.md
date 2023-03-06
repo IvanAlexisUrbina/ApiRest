@@ -53,14 +53,14 @@ Response:<br>
 <h1>Obtener información de usuario</h1>
 <strong>Método: </strong>GET<br>
 <strong>Endpoint: </strong>http://127.0.0.1:8000/api/v1/posts/1</strong><br>
-Para obtener la información de un usuario en particular, debemos utilizar el método GET y especificar el id del usuario en el endpoint. Además, es importante incluir el token de autenticación en los headers de la solicitud de la siguiente manera:
+Para obtener la información de un usuario en particular, debemos utilizar el método GET y especificar el id del usuario en el endpoint. Además, es importante incluir el token de autenticación en los headers de la solicitud de la siguiente manera:<br>
 
 <table>
   <tr>
     <td><strong>Authorization</strong></td>
     <td><strong>Bearer [Token]</strong></td>
   </tr>
-</table>
-Es necesario reemplazar [Token] con el token que se generó al momento de realizar el inicio de sesión del usuario correspondiente. Esto garantiza que sólo los usuarios autenticados puedan acceder a la información.
+</table><br>
+Es necesario reemplazar [Token] con el token que se generó al momento de realizar el inicio de sesión del usuario correspondiente. <br>Esto garantiza que sólo los usuarios autenticados puedan acceder a la información.
 
 
