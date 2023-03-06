@@ -1,11 +1,11 @@
 # PASO A PASO DE LA API
 
 Clonar el repositorio:<br>
-<b>git clone https://github.com/tu-usuario/tu-proyecto.git</b>
+<b>git clone https://github.com/IvanAlexisUrbina/ApiRest.git</b>
 <br>
 <b>Entrar al directorio del proyecto:</b>
 <br>
-cd tu-proyecto
+cd ApiRest
 <br>
 <b>Copiar el archivo .env.example a .env y configurar los valores de las variables de entorno correspondientes a la base de datos:</b><br>
 cp .env.example .env
