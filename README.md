@@ -63,6 +63,7 @@ y el ultimo dato dato escribimos un dispositivo de ejemplo.
 <h1>Obtener información de usuario</h1>
 
 Para obtener la información de un usuario en particular, debemos utilizar el método GET y especificar el id del usuario en el endpoint. Además, es importante incluir el token de autenticación en los <b>headers</b> de la solicitud de la siguiente manera:<br>
+<b>HEADERS:</b><br>
 
 <table>
   <tr>
@@ -72,8 +73,8 @@ Para obtener la información de un usuario en particular, debemos utilizar el m�
 </table><br>
 Es necesario reemplazar [Token] con el token que se generó al momento de realizar el inicio de sesión del usuario correspondiente. <br>Esto garantiza que sólo los usuarios autenticados puedan acceder a la información.<br>
 
-Además, es necesario agregar los siguientes valores a los <b>headers</b> de la solicitud para que la simulación sea correcta y la API sepa que nos estamos conectando desde allí:
-
+Además, es necesario agregar los siguientes valores a los <b>headers</b> de la solicitud para que la simulación sea correcta y la API sepa que nos estamos conectando desde allí:<br>
+<b>HEADERS:</b><br>
 <table>
   <tr>
     <td><strong>Accept</strong></td>
