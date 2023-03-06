@@ -40,7 +40,7 @@ form-data
 </table>
 
 
-Response:
+Response:<br>
 {<br>
 "token":"1|Hv8IcN5dSY6TMvb7Mhul1xJpJLPp76eCBEbI91Qd",<br>
 "message":"Success"<br>
