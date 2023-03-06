@@ -29,7 +29,8 @@ En este caso, los valores son tomados de la tabla de usuarios en la base de dato
 Por ejemplo, <br>
 para el campo "email", selecciona un correo electrónico de la tabla de <b>users</b> y escríbelo en el campo "VALUE".<br>
 en el campo password añadimos "password" de nuevo, ya que estos son datos quemados para que acepte password.<br>
-y el ultimo dato dato escribimos un dispositivo de ejemplo.
+y el ultimo dato dato escribimos un dispositivo de ejemplo.<br>
+
 
 <b>BODY:</b><br>
 *FORM DATA <br>
@@ -62,7 +63,8 @@ y el ultimo dato dato escribimos un dispositivo de ejemplo.
 <br>
 <h1>Obtener información de usuario</h1>
 
-Para obtener la información de un usuario en particular, debemos utilizar el método GET y especificar el id del usuario en el endpoint. Además, es importante incluir el token de autenticación en los <b>headers</b> de la solicitud de la siguiente manera:<br>
+Para obtener la información de un usuario en particular, debemos utilizar el método GET y especificar el id del usuario en el endpoint. Además, es importante incluir el token de autenticación en los <b>headers</b> de la solicitud de la siguiente manera:<br><br>
+
 <b>HEADERS:</b><br>
 
 <table>
@@ -73,7 +75,8 @@ Para obtener la información de un usuario en particular, debemos utilizar el m�
 </table><br>
 Es necesario reemplazar [Token] con el token que se generó al momento de realizar el inicio de sesión del usuario correspondiente. <br>Esto garantiza que sólo los usuarios autenticados puedan acceder a la información.<br>
 
-Además, es necesario agregar los siguientes valores a los <b>headers</b> de la solicitud para que la simulación sea correcta y la API sepa que nos estamos conectando desde allí:<br>
+Además, es necesario agregar los siguientes valores a los <b>headers</b> de la solicitud para que la simulación sea correcta y la API sepa que nos estamos conectando desde allí:<br><br>
+
 <b>HEADERS:</b><br>
 <table>
   <tr>
@@ -82,7 +85,7 @@ Además, es necesario agregar los siguientes valores a los <b>headers</b> de la 
   </tr>
 </table><br>
 Con estos valores en los headers, la API sabrá que la solicitud está hecha para obtener datos en formato JSON, lo que permitirá que la respuesta se ajuste a este formato.<br>
-y asi mandarnos un mensaje de satisfaccion de no esta autorizado.
+y asi mandarnos un mensaje de satisfaccion o de no estar autorizado.<br>
 
 <strong>Método: </strong>GET<br>
 <strong>Endpoint V1 RECURSO: </strong>http://127.0.0.1:8000/api/v1/posts/1</strong><br>
