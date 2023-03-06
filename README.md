@@ -1,24 +1,24 @@
 # PASO A PASO DE LA API
 es importante recordar que para ejecutar un proyecto Laravel se necesita tener un servidor web (como Apache) y un servidor de base de datos (como MySQL) activados y configurados adecuadamente.<br>
 
-Por lo tanto, antes de realizar los pasos mencionados en el mensaje anterior, asegúrate de que Apache y MySQL estén activados y en funcionamiento en tu máquina.
-
+Por lo tanto, antes de realizar los pasos, asegúrate de que Apache y MySQL estén activados y en funcionamiento en tu máquina.
+<h1>PASOS DE LA INSTALACION Y FUNCIONAMIENTO:</h1><br>
 Clonar el repositorio:<br>
-<b>git clone https://github.com/IvanAlexisUrbina/ApiRest.git</b>
+<b>-git clone https://github.com/IvanAlexisUrbina/ApiRest.git</b>
 <br>
 <b>Entrar al directorio del proyecto:</b>
 <br>
-cd ApiRest
+-cd ApiRest
 <br>
 <b>Copiar el archivo .env.example a .env y configurar los valores de las variables de entorno correspondientes a la base de datos:</b><br>
-cp .env.example .env
+-cp .env.example .env
 <br>
 <b>Generar una nueva clave para la aplicación:</b><br>
-php artisan key:generate<br>
+-php artisan key:generate<br>
 <b>Ejecutar las migraciones para crear las tablas en la base de datos:</b><br>
-php artisan migrate<br>
+-php artisan migrate<br>
 <b>Ejecutar los seeders para poblar la base de datos con datos de prueba:</b><br>
-php artisan db:seed
+-php artisan db:seed
 <br>
 <br>
 Con estos pasos, tendrás tu proyecto y base de datos configurados y listos para ser utilizados.
