@@ -85,7 +85,8 @@ Además, es necesario agregar los siguientes valores a los <b>headers</b> de la 
   </tr>
 </table><br>
 Con estos valores en los headers, la API sabrá que la solicitud está hecha para obtener datos en formato JSON, lo que permitirá que la respuesta se ajuste a este formato.<br>
-y asi mandarnos un mensaje de satisfaccion o de no estar autorizado.<br>
+y asi mandarnos un mensaje de satisfaccion o de no estar autorizado.<br><br>
+
 
 <strong>Método: </strong>GET<br>
 <strong>Endpoint V1 RECURSO: </strong>http://127.0.0.1:8000/api/v1/posts/1</strong><br>
