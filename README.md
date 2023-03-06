@@ -13,6 +13,14 @@ Así como también información sobre cómo iniciar sesión y cómo generar el t
 
 Esta API es una herramienta útil para obtener datos de una base de datos SQL y mostrarlos en una aplicación web de manera segura y eficiente.<br>
 
+<h1>API WEB</h1><br>
+Si deseas visualizar todo el contenido de la información que se encuentra en la base de datos, como si te hubieras conectado con la autenticación de la API, puedes hacerlo desde aquí. Todo el contenido viene desde la API y se muestra paginado para una mejor experiencia de usuario.<br>
+<br>
+http://127.0.0.1:8000/
+<br>
+se muestra desde aqui ya que esta ejecuntandose desde el index.<br>
+
+
 <h1>LOGIN (opcional)</h1>
 
 <strong>Método: </strong>POST<br>
