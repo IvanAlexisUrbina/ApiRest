@@ -1,3 +1,3 @@
 # ApiRest
 
-![Texto alternativo de la imagen](https://imgur.com/m2LncCz)
+![Texto alternativo de la imagen](https://imgur.com/wlAeAyR)
