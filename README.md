@@ -1,4 +1,27 @@
-# ApiRest
+# PASO A PASO DE LA API
+
+Clonar el repositorio:<br>
+<b>git clone https://github.com/tu-usuario/tu-proyecto.git</b>
+<br>
+<b>Entrar al directorio del proyecto:</b>
+<br>
+cd tu-proyecto
+<br>
+<b>Copiar el archivo .env.example a .env y configurar los valores de las variables de entorno correspondientes a la base de datos:</b><br>
+cp .env.example .env
+<br>
+<b>Generar una nueva clave para la aplicación:</b><br>
+php artisan key:generate<br>
+<b>Ejecutar las migraciones para crear las tablas en la base de datos:</b><br>
+php artisan migrate<br>
+<b>Ejecutar los seeders para poblar la base de datos con datos de prueba:</b><br>
+php artisan db:seed
+<br>
+<br>
+Con estos pasos, tendrás tu proyecto y base de datos configurados y listos para ser utilizados.
+
+
+
 
 <h1>API RESTFUL CON LARAVEL</h1>
 Esta API REST está diseñada para mostrar datos de una base de datos SQL en una aplicación web.<br> Se han creado dos versiones de la API: la versión 1 muestra los recursos por defecto de la base de datos, mientras que la versión 2 da un formato diferente a la coleccion de recursos.<br>
