@@ -53,7 +53,7 @@ Response:<br>
 <h1>Obtener información de usuario</h1>
 <strong>Método: </strong>GET<br>
 <strong>Endpoint: </strong>http://127.0.0.1:8000/api/v1/posts/1</strong><br>
-Para obtener la información de un usuario en particular, debemos utilizar el método GET y especificar el id del usuario en el endpoint. Además, es importante incluir el token de autenticación en los headers de la solicitud de la siguiente manera:<br>
+Para obtener la información de un usuario en particular, debemos utilizar el método GET y especificar el id del usuario en el endpoint. Además, es importante incluir el token de autenticación en los <b>headers</b> de la solicitud de la siguiente manera:<br>
 
 <table>
   <tr>
@@ -61,6 +61,16 @@ Para obtener la información de un usuario en particular, debemos utilizar el m�
     <td><strong>Bearer [Token]</strong></td>
   </tr>
 </table><br>
-Es necesario reemplazar [Token] con el token que se generó al momento de realizar el inicio de sesión del usuario correspondiente. <br>Esto garantiza que sólo los usuarios autenticados puedan acceder a la información.
+Es necesario reemplazar [Token] con el token que se generó al momento de realizar el inicio de sesión del usuario correspondiente. <br>Esto garantiza que sólo los usuarios autenticados puedan acceder a la información.<br>
 
+Además, es necesario agregar los siguientes valores a los <b>headers</b> de la solicitud para que la simulación sea correcta y la API sepa que nos estamos conectando desde allí:
+
+<table>
+  <tr>
+    <td><strong>Accept</strong></td>
+    <td><strong>application/json</strong></td>
+  </tr>
+</table><br>
+Con estos valores en los headers, la API sabrá que la solicitud está hecha para obtener datos en formato JSON, lo que permitirá que la respuesta se ajuste a este formato.<br>
+y asi mandarnos un mensaje de satisfaccion de no esta autorizado.
 
